@@ -1,0 +1,35 @@
+{
+  "name": "ed-craft-uix",
+  "version": "1.1.0",
+  "description": "Testing library implementation for angular core in-depth course.",
+  "author": "Prophet Code (Alex Av.) <[email](alexanderavilab@gmail.com)> (alexanderavilab@gmail.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prophet-99/ed-craft-ui.git"
+  },
+  "keywords": [
+    "prophet-code",
+    "ngx-craft-ui",
+    "craft",
+    "typescript",
+    "angular"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^18.1.0",
+    "@angular/core": "^18.1.0",
+    "tailwindcss": "^3.4.7",
+    "postcss": "^8.4.40",
+    "autoprefixer": "^10.4.19",
+    "chart.js": "^4.4.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "exports": {
+    "./theme": {
+      "tailwind": "./src/theme/tailwind.scss"
+    }
+  }
+}

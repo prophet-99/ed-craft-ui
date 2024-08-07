@@ -1,0 +1,19 @@
+<section class="max-w-sm rounded-lg shadow bg-gray-800 border-gray-700">
+  <article class="relative" *ngIf="showThumbnail">
+    <span class="absolute top-2 left-2 text-xs font-medium px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+      {{ classification }}
+    </span>
+  </article>
+  <ng-content select="[edCraftCardThumbnail]" />
+  <article class="p-5">
+    <div class="flex items-center gap-2 mb-1">
+      <ng-content select="[edCraftCardTitle]">Default title</ng-content>
+    </div>
+    <div [class.mb-6]="showFooter">
+      <ng-content select="[edCraftCardBody]">Default content</ng-content>
+    </div>
+    <div class="flex items-center gap-2" *ngIf="showFooter">
+      <ng-content select="[edCraftCardFooter]" />
+    </div>
+  </article>
+</section>
